@@ -1,0 +1,175 @@
+body{
+    background: linear-gradient(to right top, #f17a7e, #f19780, #eeb28e, #ebcba6, #ece1c6, #ddddc7, #d2d8c9, #cbd2ca, #a9b5ad, #889893, #687c7a, #4a6163);
+    background-repeat: no-repeat;    
+}
+
+.topnav{
+    margin-top: 0;
+    background-color: rgb(74, 97, 99, 0.3) ;
+    height: 10vh;
+    display: flex;
+    justify-content:right;
+    align-items:center;    
+}
+
+
+.links{
+    float: right;
+    display: flex;
+    margin-right: 2vw;
+    
+}
+.topnav .links a{
+    font-size: 1.6rem;
+    color: #f9faf4;
+    margin-left: 3vw;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+.topnav .links a:hover{
+    transform: scale(1.04);
+    color:rgba(33, 25, 26, 0.805);
+    
+}
+
+.home-page{
+    margin-top: 14.8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-page h1{
+    font-size: 2.2rem;
+    color: #0c0c0c;
+}
+
+.icon:hover{ 
+    transform: scale(1.1);
+}
+
+#image-main{
+    margin-left: 5vw;
+    width: 50vh;
+    border: #4a6163;
+    border-radius: 50%;
+    float: right; 
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+     
+}
+#image-main:hover{
+    transform: scale(1.08);
+    
+}
+
+.overlay_techstack{
+    
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.techstack{
+    
+    padding: 0px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s;
+    
+      
+}
+
+.techstack table,tr,td{
+    /* border: 1px black solid; */
+    padding: 0.7rem;  
+    
+}
+
+table img{
+    width: 6vw;
+    height: 8vh;
+}
+.skill{
+    color: rgb(255, 255, 255);
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+#techstack_close_button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 2vw;
+    margin-right: 2vh;
+    background-color:rgba(0,0,0, 0.9) ;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    border: none;
+}
+
+
+.project_overlay{
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    right: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .project{
+    padding: 0px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s;
+ }
+
+ #project_close_button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 2vw;
+    margin-right: 2vh;
+    background-color:rgba(0,0,0, 0.9) ;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    border: none;
+}
+
+.project_overlay table{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    color: white;
+}
+.project_overlay td{
+    padding: 1.5rem;
+}
+.project_overlay table img{
+    width: 30vw;
+    height: auto;
+}

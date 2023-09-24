@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio</title>
+    
+    <link rel="stylesheet" href="design.css">
+    <link rel="icon" href="color-palette.png">
+    <script src="working.js"></script>
+</head>
+<body>
+
+    <div class="topnav">
+        <div class="links">
+        <a href="#home">Home</a>
+        <a href="#tech" onclick="open_techstack()">TechStack</a>
+        <a href="#project" onclick="open_projects()">Projects</a>
+        <a href="mailto:anushka3945@gmail.com">Send email</a>
+        </div>
+        
+    </div>
+
+    <div class="home-page">
+        
+            <h1>Welcome to my corner of the web!<br> 
+                I'm Anushka, a student who loves to design websites.<br> 
+                Join me on a visual journey through my portfolio.<br><br>
+                
+                
+                <a href="https://www.linkedin.com/in/anushka-gupta007/" target="_blank" ><img src="icons8-linkedin-50.png" class="icon"></a>
+                &nbsp; 
+                <a href="https://github.com/dashboard" target="_blank" ><img src="icons8-github-50.png" class="icon"></a>
+            </h1>    
+        <img src="IMG_20230923_122129.jpg" id="image-main">
+    </div>
+    <br><br><br><br><br>
+
+    <div class="overlay_techstack" id="techstack">
+        <table class="techstack">
+            <tr>
+                <td class="skill">HTML</td>
+                <td><img src="html_logo.png" alt="" class="table-icon"></td>
+                <td><progress value="95" max="100" ></progress></td>
+            </tr>
+            <tr>
+                <td class="skill">CSS</td>
+                <td><img src="CSS3_logo.svg.png" alt="" class="table-icon"></td>
+                <td><progress value="75" max="100"></progress></td>
+            </tr>
+            <tr>
+                <td class="skill">Javascript</td>
+                <td><img src="JavaScript-logo.png" alt="" class="table-icon"></td>
+                <td><progress value="65" max="100"></progress></td>
+            </tr>
+            <tr>
+                <td class="skill">Bootstrap</td>
+                <td><img src="bootstrap.png" alt="" class="table-icon"></td>
+                <td><progress value="70" max="100"></progress></td>
+            </tr>
+            <tr>
+                <td class="skill">Python</td>
+                <td><img src="Python-logo-notext.svg.png" alt="" class="table-icon"></td>
+                <td><progress value="45" max="100"></progress></td>
+            </tr>
+            <tr>
+                <td class="skill">MySQL</td>
+                <td><img src="mysql_logo.png" alt="" class="table-icon"></td>
+                <td><progress value="85" max="100"></progress></td>
+            </tr>
+            
+            
+        </table>
+        <button id="techstack_close_button" onclick="closetechstack()">X</button>
+    </div>
+
+    <div class="project_overlay" id="project" >
+        <table class="project" >
+            <tr>
+                <td><h3>Bankist<br> A banking website interface with image carousel, sticky navigation bars and form.</h3></td>
+                <td><img src="Screenshot 2023-09-02 154955.png"></td>
+            </tr>
+            <tr>
+                <td><img src="E-Commerce-Website-Design-Ideas-31.jpg"></td>
+                <td><h3>E-Commerce Website<br>An online shopping website with different products displayed in the form of cards.</h3></td>
+            </tr>
+
+        </table>
+
+        <button id="project_close_button" onclick="closeproject()">X</button>
+
+    </div>
+
+
+    
+    
+</body>
+</html>
